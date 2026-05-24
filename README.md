@@ -119,16 +119,20 @@ npm run dev
 
 ---
 
-### Inicio rápido en Windows (PowerShell)
+### Scripts de Inicio Rápido en Windows (.bat)
 
-Una vez instaladas las dependencias, podés iniciar ambos servidores en simultáneo con:
+Para hacer que la experiencia de desarrollo sea lo más simple posible, el repositorio incluye dos scripts automáticos listos para usar en Windows. Solo necesitás hacer doble clic sobre ellos desde el explorador de archivos:
 
-```powershell
-Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd '$PWD\backend'; .\venv\Scripts\Activate.ps1; uvicorn app.main:app --reload"
-Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd '$PWD\frontend'; npm run dev"
-```
+1. **`setup.bat` (Instalación)**: Ejecutá este archivo **por única vez** luego de descargar o clonar el repositorio. El script se encarga de:
+   - Crear y activar el entorno virtual de Python.
+   - Instalar las librerías del Backend (`requirements.txt`).
+   - Generar tu archivo `.env` base para la base de datos y JWT.
+   - Descargar e instalar los paquetes de Node.js del Frontend (`npm install`).
 
-> Abre dos ventanas separadas: una para la API (FastAPI) y otra para el frontend (Vite).
+2. **`start.bat` (Arranque)**: Usá este archivo cada vez que quieras trabajar en el proyecto. 
+   - Automáticamente abre dos ventanas de consola en paralelo: una corriendo el servidor backend con `uvicorn` y otra con el frontend de Vite.
+
+> 💡 **Tip:** ¡Con solo un doble clic en `start.bat` ya tenés todo el sistema corriendo! Accedé luego a **[http://localhost:5173](http://localhost:5173)** en tu navegador.
 
 ---
 
