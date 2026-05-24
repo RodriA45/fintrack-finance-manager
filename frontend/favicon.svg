@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="8" fill="#070b14"/>
+  <path d="M16 6L25 12.5L16 26L7 12.5L16 6Z" fill="url(#indigoGrad)"/>
+  <path d="M16 6L11.5 12.5L16 26L20.5 12.5L16 6Z" fill="#ffffff" fill-opacity="0.3"/>
+  <path d="M7 12.5H25" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.5"/>
+  <defs>
+    <linearGradient id="indigoGrad" x1="7" y1="6" x2="25" y2="26" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+</svg>
